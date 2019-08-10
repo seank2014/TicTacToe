@@ -41,6 +41,11 @@ public class ComputerTest {
 
     @Test
     public void testMakePlay() {
+        char playerToken = 'x';
+        char compkey = 'o';
+        TicTacLogic logic = new TicTacLogic(playerToken, compkey);
+        comp.pickAspot(logic);
+        assertNotNull(comp.pickAspot(logic));
     }
     
 }
