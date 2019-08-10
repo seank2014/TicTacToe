@@ -72,7 +72,27 @@ public class TicTacLogic {
        }
        return board;
    }
+   
+   //Check if spot selected in on board
+   public boolean inRange(int number){
+       return number > 0 && number < board.length + 1;
+   }
+   
+   //Check if spot selected is available
+   public boolean isSpotTaken(int number){
+       return board[number - 1] != '-';
+   }
     
+   
+   //Check if it is users turn
+   public boolean playTurn(int spot){
+       boolean isValid = inRange(spot) && !isSpotTaken(spot);
+       if(isValid){
+           board[spot - 1] = currentKey;
+              currentKey = (currentKey == userKey) ? compKey : userKey;   
+          }
+          return isValid;
+       }
    
 
 }
