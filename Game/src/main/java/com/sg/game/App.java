@@ -16,6 +16,10 @@ public class App {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        UI ui = new UI();
+        
+        ui.playGame();
     }
     
 }

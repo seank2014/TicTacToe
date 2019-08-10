@@ -30,6 +30,7 @@ public class TicTacLogic {
        
    }
    
+   
    public void printBoard(){
        //Creating
        //   | - | - | -
@@ -47,7 +48,7 @@ public class TicTacLogic {
                System.out.println("-------------");
            }
            //will print divided and following "block"
-           System.out.println(" | " + board[i]);
+           System.out.print(" | " + board[i]);
        }
        System.out.println();
    }
@@ -59,7 +60,7 @@ public class TicTacLogic {
                System.out.println();
                System.out.println("-------------");
            }
-           System.out.println(" | " + (i + 1));
+           System.out.print(" | " + (i + 1));
        }
           System.out.println();
    }
