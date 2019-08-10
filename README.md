@@ -1,10 +1,10 @@
 # TicTacToe
 
-Enclosed is a simple Tic Tac Toe game. It is written in java and user interface is seen in the console. 
+Enclosed is a simple Tic Tac Toe game. It is written in java and the user interface can be seen on the console. Please use an IDE compatible with Java to run this program.
 
 # Instruction
 
-Once the program builds and successfully runs on your IDE, you will be prompted to chose a single character i.e ('x' or 'o') to represent you in the game. First for yourself and then for the computer. 
+Once the program builds and successfully runs on your IDE, you will be prompted to chose a single character i.e ('x' or 'o') to represent the players in the game. First for yourself and then for the computer. 
 
 The board is laid out into 9 squares in a 3 by 3 board, as seen below.
 
@@ -13,7 +13,7 @@ The board is laid out into 9 squares in a 3 by 3 board, as seen below.
 | 4 | 5 | 6
 -------------
 | 7 | 8 | 9
-
+-------------
 
 Once you know where you'd like to place your character, simply enter the number of the spot. The program with then record this and make a selection. 
 
@@ -29,6 +29,7 @@ You picked 1!
  | - | - | -
 -------------
  | - | - | -
+ -------------
  
 Time for the master to make a move
 I picked 3!
@@ -39,5 +40,6 @@ I picked 3!
  | - | - | -
 -------------
  | - | - | -
+ -------------
  
  Once the board is full or someone has won, the program will let you know and give you the option to play again. Enjoy.
