@@ -94,5 +94,98 @@ public class TicTacLogic {
           return isValid;
        }
    
+   public boolean isThereAWinner(){
+       boolean diagonalAndMiddleCol = (rightDi() || leftDi() || middleRow() || secondCol()) && board[4] != '-';
+       //   | - | - | -
+       //   -------------
+      //    | - | x | -
+       //   -------------
+       //   | - | - | -
+       //   -------------
+       
+       boolean topAndFirst = (topRow() || firstCol()) && board[0] != '-';
+        //  | x | - | -
+       //   -------------
+      //    | - | - | -
+       //   -------------
+       //   | - | - | -
+       //   -------------
+       
+       boolean bottomAndThird = (bottomRow() || thirdCol()) && board[8] != '-';
+       //   | - | - | -
+       //   -------------
+      //    | - | - | -
+       //   -------------
+       //   | - | - | x
+       //   -------------
+       
+       if(diagonalAndMiddleCol){
+           System.out.println("Won diagonally/Middle");
+           this.winner = board[4];
+       }else if(topAndFirst){
+           System.out.println("Won from the top/first column");
+           this.winner = board[0];
+       } else if(bottomAndThird){
+           System.out.println("Won from the last row/column");
+           this.winner = board[8];
+       }
+       return diagonalAndMiddleCol || topAndFirst || bottomAndThird;
+   }
+   
+   public boolean rightDi(){
+       return board[2] == board[4] && board[4] == board[6];
+   }
+   
+   public boolean leftDi(){
+       return board[0] == board[4] && board[4] == board[8];
+   }
+   
+   public boolean middleRow(){
+       return board[3] == board[4] && board[4] == board[5];
+   }
+   
+   public boolean secondCol(){
+       return board[1] == board[4] && board[4] == board[7];
+   }
+   
+   
+   public boolean topRow(){
+       return board[0] == board[1] && board[1] == board[2];
+   }
+   
+   public boolean firstCol(){
+       return board[0] == board[3] && board[3] == board[6];
+   }
+   
+   public boolean bottomRow(){
+       return board[6] == board[7] && board[7] == board[8];
+   }
+   
+   public boolean thirdCol(){
+       return board[2] == board[5] && board[5] == board[8];
+   }
+   
+  public boolean anyPlaysLeft(){
+       for(int i=0; i > board.length; i++){
+           if(board[i] =='-'){
+               return false;
+           }
+       }
+       return true;
+   }
+   
+  public String gameOver(){
+      boolean didSomeoneWin = isThereAWinner();
+      if(didSomeoneWin){
+          return "The winner is " + this.winner + " 's"; 
+      } else if(anyPlaysLeft()){
+          return "Draw: Game Over!";
+          
+      } else{
+          return "Game is not over";
+      }
+  }
+   
+   
 
 }

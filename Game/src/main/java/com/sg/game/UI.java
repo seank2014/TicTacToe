@@ -5,10 +5,13 @@
  */
 package com.sg.game;
 
+import java.util.Scanner;
+
 /**
  *
  * @author seanking
  */
 public class UI {
+    Scanner scan = new Scanner(System.in);
     
 }
