@@ -51,5 +51,28 @@ public class TicTacLogic {
        }
        System.out.println();
    }
+   
+      public void printIndexBoard(){
+       System.out.println();
+       for(int i = 0; i < 9; i++){
+           if(i % 3 == 0 && i !=0){
+               System.out.println();
+               System.out.println("-------------");
+           }
+           System.out.println(" | " + (i + 1));
+       }
+          System.out.println();
+   }
+   
+   public char[] setBoard(){
+       //setting parameters of board
+       char[] board = new char[9];
+       for(int i = 0; i < board.length; i++){
+           board[i] = '-';
+       }
+       return board;
+   }
     
+   
+
 }
