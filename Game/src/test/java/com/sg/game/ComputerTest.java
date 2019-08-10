@@ -20,6 +20,8 @@ public class ComputerTest {
     
     public ComputerTest() {
     }
+
+    Computer comp = new Computer();
     
     @BeforeClass
     public static void setUpClass() {
@@ -38,7 +40,8 @@ public class ComputerTest {
     }
 
     @Test
-    public void testSomeMethod() {
+    public void testMakePlay() {
+   
     }
     
 }
