@@ -25,13 +25,13 @@ public class UI {
 
             System.out.println(
                     "Welcome to Tic Tac Toe. I am your fair but fierce opponent! \n"
-                    + "Before we start (and I win) you must chose a letter the that \n"
+                    + "Before we start (and I win) you must chose a single character that \n"
                     + "each of us will play as. That's right, we can be more than just x's and o's! ");
             
             System.out.println();
-            System.out.println("Enter a single letter in the alphabet you'd like to play as");
+            System.out.println("Enter a single character you'd like to play as");
             char playerToken = scan.nextLine().charAt(0);
-            System.out.println("Enter a single letter in the alphabet you'd like me to play as");
+            System.out.println("Enter a single character you'd like me to play as");
             char compToken = scan.nextLine().charAt(0);
 
             TicTacLogic game = new TicTacLogic(playerToken, compToken);
@@ -76,8 +76,9 @@ public class UI {
             //Ask if user wants to play again
             System.out.println("Do you want to play again? Enter Y  for 'Yes'. "
                     + "If not, press any key you'd like");
-            String response = scan.nextLine();
-            if (response.equalsIgnoreCase("y")) {
+            char response = scan.next().charAt(0);    
+            if (response == 'y' || response == 'Y' ) {
+                scan.nextLine();
                 doYouWantToPlay = true;
             } else {
                 System.out.println("Thanks for playing!");
