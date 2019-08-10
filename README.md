@@ -2,7 +2,7 @@
 
 Enclosed is a simple Tic Tac Toe game. It is written in java and the user interface can be seen on the console. Please use an IDE compatible with Java to run this program.
 
-# Instruction
+# Instructions
 
 Once the program builds and successfully runs on your IDE, you will be prompted to chose a single character i.e ('x' or 'o') to represent the players in the game. First for yourself and then for the computer. 
 
