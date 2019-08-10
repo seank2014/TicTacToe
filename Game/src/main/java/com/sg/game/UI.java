@@ -33,7 +33,6 @@ public class UI {
             char playerToken = scan.nextLine().charAt(0);
             System.out.println("Enter a single character you'd like me to play as");
             char compToken = scan.nextLine().charAt(0);
-
             TicTacLogic game = new TicTacLogic(playerToken, compToken);
             Computer computer = new Computer();
 
