@@ -5,7 +5,6 @@
  */
 package com.sg.game.dao;
 
-import com.sg.game.dto.Game;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
