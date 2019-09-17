@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.sg.game;
+package com.sg.game.dto;
 
+import com.sg.game.dao.GameDao;
+import com.sg.game.dao.GameDaoImpl;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -17,11 +19,12 @@ import static org.junit.Assert.*;
  * @author seanking
  */
 public class ComputerTest {
+        GameDao game = new GameDaoImpl('x','o');
+
+    Computer computer = new Computer();
     
     public ComputerTest() {
     }
-
-    Computer comp = new Computer();
     
     @BeforeClass
     public static void setUpClass() {
@@ -39,13 +42,26 @@ public class ComputerTest {
     public void tearDown() {
     }
 
+    /**
+     * Test of pickAspot method, of class Computer.
+     */
     @Test
     public void testMakePlay() {
-        char playerToken = 'x';
-        char compkey = 'o';
-        TicTacLogic logic = new TicTacLogic(playerToken, compkey);
-        comp.pickAspot(logic);
-        assertNotNull(comp.pickAspot(logic));
+   
+        //Arrange
+        GameDaoImpl game = new GameDaoImpl('x','o');
+
+        Computer comp = new Computer();
+        
+        //Act
+        game.playTurn(5);
+        int compSpot = comp.pickAspot(game);
+         game.playTurn(compSpot);
+        
+        //Assert
+        assertNotNull(compSpot);
+       
     }
+    
     
 }

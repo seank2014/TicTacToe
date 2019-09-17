@@ -5,6 +5,8 @@
  */
 package com.sg.game;
 
+import com.sg.game.controller.gameController;
+
 /**
  *
  * @author seanking
@@ -17,8 +19,8 @@ public class App {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        UI ui = new UI();
-        ui.playGame();
+        gameController controller = new gameController();
+        controller.playGame();
 
     }
 
