@@ -51,7 +51,7 @@ public class GameDaoImplTest {
     }
 
     /**
-     * Test of isSpotTaken method, of class TicTacLogic.
+     * Test of isSpotTaken method, of class Game.
      */
     @Test
     public void testIsSpotTaken() {
@@ -73,7 +73,7 @@ public class GameDaoImplTest {
     
 
     /**
-     * Test of isThereAWinner method, of class TicTacLogic.
+     * Test of isThereAWinner method, of class Game.
      */
     @Test
     public void testIsThereAWinner() {
@@ -94,7 +94,7 @@ public class GameDaoImplTest {
     }
 
     /**
-     * Test of rightDi method, of class TicTacLogic.
+     * Test of rightDi method, of class Game.
      */
     @Test
     public void testRightDi() {
@@ -115,7 +115,7 @@ public class GameDaoImplTest {
     }
 
     /**
-     * Test of leftDi method, of class TicTacLogic.
+     * Test of leftDi method, of class Game.
      */
     @Test
     public void testLeftDi() {
@@ -135,7 +135,7 @@ public class GameDaoImplTest {
     }
 
     /**
-     * Test of middleRow method, of class TicTacLogic.
+     * Test of middleRow method, of class Game.
      */
     @Test
     public void testMiddleRow() {
@@ -156,7 +156,7 @@ public class GameDaoImplTest {
     }
 
     /**
-     * Test of secondCol method, of class TicTacLogic.
+     * Test of secondCol method, of class Game.
      */
     @Test
     public void testSecondCol() {
@@ -176,7 +176,7 @@ public class GameDaoImplTest {
     }
 
     /**
-     * Test of topRow method, of class TicTacLogic.
+     * Test of topRow method, of class Game.
      */
     @Test
     public void testTopRow() {
@@ -197,7 +197,7 @@ public class GameDaoImplTest {
     }
 
     /**
-     * Test of firstCol method, of class TicTacLogic.
+     * Test of firstCol method, of class Game.
      */
     @Test
     public void testFirstCol() {
@@ -218,7 +218,7 @@ public class GameDaoImplTest {
     }
 
     /**
-     * Test of bottomRow method, of class TicTacLogic.
+     * Test of bottomRow method, of class Game.
      */
     @Test
     public void testBottomRow() {
@@ -239,7 +239,7 @@ public class GameDaoImplTest {
     }
 
     /**
-     * Test of thirdCol method, of class TicTacLogic.
+     * Test of thirdCol method, of class Game.
      */
     @Test
     public void testThirdCol() {
@@ -260,7 +260,7 @@ public class GameDaoImplTest {
     }
 
     /**
-     * Test of anyPlaysLeft method, of class TicTacLogic.
+     * Test of anyPlaysLeft method, of class Game.
      */
     @Test
     public void testAnyPlaysLeft() {
@@ -289,7 +289,7 @@ public class GameDaoImplTest {
          }
 
     /**
-     * Test of gameOver method, of class TicTacLogic.
+     * Test of gameOver method, of class Game.
      */
     @Test
     public void testGameOver() {
