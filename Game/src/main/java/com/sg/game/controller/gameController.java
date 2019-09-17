@@ -30,7 +30,6 @@ public class gameController {
                 case 'Y':
                     view.printIntroduction();
                     view.newGame();
-                    getMenuSelection();
                     break;
                 case 'N':
                     doYouWantToPlay = false;
